@@ -57,7 +57,7 @@ class ObsExtPTRunner(deepobs.pytorch.runners.runner.PTRunner):
             # testproblem_cls = getattr(testproblem_mod, testproblem)
             testproblem_cls = getattr(obs_ext_problems, testproblem)
             print("Loading local testproblem.")
-        except:
+        except Exception:
             testproblem_cls = getattr(testproblems, testproblem)
 
         # if the user specified L2-regularization, use that one

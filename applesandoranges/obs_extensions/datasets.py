@@ -7,14 +7,13 @@
 
 
 import torchvision
-
 #
 from deepobs import config
-from deepobs.pytorch.datasets import mnist, cifar10, cifar100
+from deepobs.pytorch.datasets import cifar10, cifar100, mnist
 from deepobs.pytorch.datasets.cifar10 import training_transform_not_augmented
 
 #
-from .samplers import SubsetSampler, SeededRandomSampler
+from .samplers import SeededRandomSampler, SubsetSampler
 
 
 # ##############################################################################

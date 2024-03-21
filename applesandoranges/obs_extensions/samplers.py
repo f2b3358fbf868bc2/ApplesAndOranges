@@ -8,7 +8,6 @@ PyTorch dataset.
 """
 
 
-import random
 from collections import defaultdict
 
 #
@@ -80,7 +79,9 @@ class SubsetSampler(Sampler):
             v >= entries_per_class for v in class_sizes.values()
         ), f"Not all classes have enough elements! {class_sizes}"
         # now we can gather the balanced indexes into the sampler
-        idxs = sorted(sum((v[:entries_per_class] for v in histogram.values()), []))
+        idxs = sorted(
+            sum((v[:entries_per_class] for v in histogram.values()), [])
+        )
         sampler = cls(idxs)
         return sampler
 

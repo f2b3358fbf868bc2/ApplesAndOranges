@@ -255,7 +255,9 @@ class ObsParamConfigs:
     }
 
     @classmethod
-    def get_param_idxs(cls, obs_problem, layers=None, types=None, shape_fn=None):
+    def get_param_idxs(
+        cls, obs_problem, layers=None, types=None, shape_fn=None
+    ):
         """
         Retrieve indexes for a given task that satisfy given criteria.
 

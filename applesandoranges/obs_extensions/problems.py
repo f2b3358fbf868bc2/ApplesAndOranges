@@ -6,11 +6,11 @@
 """
 
 
-import torch
 import deepobs
+import torch
 
 #
-from .datasets import mnist_16x16, cifar10det, cifar100det
+from .datasets import cifar10det, cifar100det, mnist_16x16
 from .models import FlexiMLP
 
 

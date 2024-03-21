@@ -13,13 +13,9 @@
 
 import torch
 
-from .distributed_decompositions import (
-    orthogonalize,
-    solve_core_seigh,
-    solve_core_ssvd,
-)
+from .distributed_decompositions import (orthogonalize, solve_core_seigh,
+                                         solve_core_ssvd)
 from .distributed_measurements import innermeas_idx_torch, ssrft_idx_torch
-
 #
 from .ssrft import SSRFT
 

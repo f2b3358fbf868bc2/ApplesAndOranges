@@ -7,6 +7,7 @@
 
 
 from collections import OrderedDict
+
 import torch
 
 
@@ -16,7 +17,9 @@ import torch
 class FlexiMLP(torch.nn.Sequential):
     """ """
 
-    def __init__(self, dims=(256, 20, 20, 20, 20, 20, 10), activation=torch.nn.Tanh):
+    def __init__(
+        self, dims=(256, 20, 20, 20, 20, 20, 10), activation=torch.nn.Tanh
+    ):
         """
         Defaults from the K-FAC paper
         """
